@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pythagorean Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <h1 id="h1">Pythagorean-Theorem</h1><br>
+        <p>For any right triangle with sides <b>a</b> and <b>b</b> and hypotenuse <b>c</b>, the square of the hypotenuse is equal to the sum of the squares of the other two sides. </p>
+        <h6 id="imagecenter"> <a href="http://www.etudes.ru/en/etudes/pythagorean-theorem/">
+        <img src="images/Pythagorean-Theorem.jpeg" id="calc"> </a> </h6> <br>
+        <div id="box2">
+            <h2>Pythagorean Calculator</h2>
+            <p>Enter lengths for the two shorter sides of a right triangle. Then click the <span id="border1">Calculate</span> button to determine the length of the hypotenuse.</p>
+            <form onsubmit="return formsubmit()">
+                <h3>Inputs</h3>
+                Side a: <input type="text" value="" id="sidea"> <br>
+                Side b: <input type="text" value="" id="sideb"> <br>
+                <input type="submit" id="submit" value="Calculate">
+                <h2>Result</h2>
+                <p>The length of the hypotenuse is: <span id="questionmarks">?????</span> </p>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
